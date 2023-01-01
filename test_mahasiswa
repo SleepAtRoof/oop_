@@ -1,0 +1,32 @@
+
+class mahasiswa{
+    String nama;
+    int angkatan;
+    String asal;
+    mahasiswa(){
+        nama  = "Salim";
+        angkatan = 2015;
+        asal = "Lobar";
+    }
+    void ubah(String nm, int ang, String as){
+        nama = nm;
+        angkatan = ang;
+        asal = as;
+    }
+    void cetak(){
+        System.out.println("nama : "+nama);
+        System.out.println("angkatan : "+angkatan);
+        System.out.println("asal : "+asal);
+    }
+}
+public class testmahasiswa{
+    public static void main(String[] args) {
+        mahasiswa MHS = new mahasiswa();
+        System.out.println("identitas awal : ");
+        MHS.cetak();
+
+        MHS.ubah("Madara", 2017, "Konoha");
+        System.out.println("identitas akhir : ");
+        MHS.cetak();
+    }
+}
